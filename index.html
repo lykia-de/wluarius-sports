@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="WLUARIUS SPORTS — futbol transfer haberleri, söylentiler ve resmî açıklamalar.">
+  <title>Wluarius Sports | Transfer Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Wluarius Sports ana sayfa"><span class="brand-mark">W</span><span>WLUARIUS<span class="brand-accent"> SPORTS</span><small>FOOTBALL & TRANSFER NEWS</small></span></a>
+    <nav class="main-nav" aria-label="Ana menü">
+      <a class="active" href="#feed">Haberler</a><a href="#rumours">Söylentiler</a><a href="#players">Oyuncular</a><a href="#clubs">Kulüpler</a>
+    </nav>
+    <div class="top-actions"><span class="live-indicator"><i></i> CANLI AKIŞ</span><button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> GLOBAL TRANSFER DESK</div>
+        <h1>TRANSFER<br><em>GÜNDEMİ.</em></h1>
+        <p>Dünyanın dört bir yanından transfer haberleri, kulisler ve resmî açıklamalar. Tek merkezde.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#feed">Haberleri keşfet <b>↗</b></a><a class="text-link" href="#rumours">Söylentilere göz at <span>→</span></a></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-ball">⚽</div>
+        <div class="hero-stamp"><b>WS</b><span>THE TRANSFER<br>WINDOW NEVER SLEEPS</span></div>
+        <div class="hero-stat"><strong>24/7</strong><span>TRANSFER TAKİBİ</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Bilgi şeridi"><span class="ticker-label">WLUARIUS SPORTS DESK</span><div class="ticker-track"><span>HIZLI HABER</span><b>✳</b><span>KAYNAK ODAKLI</span><b>✳</b><span>RESMÎ + SÖYLENTİ</span><b>✳</b><span>GLOBAL FUTBOL</span><b>✳</b><span>HIZLI HABER</span></div></section>
+
+    <section class="section" id="feed">
+      <div class="section-heading"><div><div class="eyebrow">SON GELİŞMELER</div><h2>TRANSFER <em>AKIŞI</em></h2></div><div class="feed-controls"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Oyuncu, kulüp veya haber ara..." aria-label="Haber ara"></label><button class="icon-button" id="refreshButton" title="Demo akışını yenile">↻</button></div></div>
+      <div class="filter-row" id="feedFilters">
+        <button class="filter active" data-filter="all">Tümü</button><button class="filter" data-filter="official">Resmî</button><button class="filter" data-filter="rumour">Söylenti</button><button class="filter" data-filter="superlig">Süper Lig</button><button class="filter" data-filter="europe">Avrupa</button>
+      </div>
+      <div class="demo-note"><span>ⓘ</span> Bu sürüm tasarım demosudur. Aşağıdaki haberler örnek içeriktir; gerçek zamanlı haber veya doğrulanmış transfer değildir.</div>
+      <div class="news-grid" id="newsGrid"></div>
+      <div class="empty-state hidden" id="emptyState">Aramana uygun haber bulunamadı.</div>
+    </section>
+
+    <section class="section split-section" id="rumours">
+      <div class="section-heading"><div><div class="eyebrow">KULİSLERDEN</div><h2>TRANSFER <em>SÖYLENTİLERİ</em></h2></div><span class="section-side-note">ÖRNEK GÖRÜNÜM / DOĞRULANMAMIŞ</span></div>
+      <div class="rumour-panel" id="rumourPanel"></div>
+    </section>
+
+    <section class="section" id="players">
+      <div class="section-heading"><div><div class="eyebrow">OYUNCU MERKEZİ</div><h2>ÖNE ÇIKAN <em>OYUNCULAR</em></h2></div><span class="section-side-note">PROFİL ÖRNEKLERİ</span></div>
+      <div class="player-grid" id="playerGrid"></div>
+    </section>
+
+    <section class="section clubs-section" id="clubs">
+      <div class="section-heading"><div><div class="eyebrow">KULÜP MERKEZİ</div><h2>KULÜPLER <em>VE GÜNDEM</em></h2></div><span class="section-side-note">ÖRNEK KULÜP SAYFALARI</span></div>
+      <div class="club-grid" id="clubGrid"></div>
+    </section>
+
+    <section class="newsletter">
+      <div><div class="eyebrow">WLUARIUS SPORTS'A KATIL</div><h2>TRANSFERİN<br><em>GERİSİNDE KALMA.</em></h2><p>Yeni haber akışı ve ürün güncellemeleri için bizi takip et.</p></div>
+      <a class="btn btn-primary" href="https://t.me/" target="_blank" rel="noreferrer">Telegram kanalına git ↗</a>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">W</span><span>WLUARIUS<span class="brand-accent"> SPORTS</span><small>FOOTBALL & TRANSFER NEWS</small></span></a><p>© 2026 Wluarius Sports. Bu sayfa şu an demo arayüzüdür.</p><a href="#top" class="back-top">YUKARI ↑</a></footer>
+  <div class="modal hidden" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close></div><div class="modal-card"><button class="modal-close" data-close aria-label="Kapat">×</button><div id="modalContent"></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
