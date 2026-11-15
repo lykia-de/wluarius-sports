@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Örnek transfer haberi",
+    "summary": "Bu alan haberin Türkçe özetini içerecek.",
+    "category": "rumour",
+    "player": "Örnek Oyuncu",
+    "club": "Örnek Kulüp",
+    "source": "Haber Kaynağı",
+    "url": "https://example.com",
+    "date": "2026-11-15"
+  }
+]
